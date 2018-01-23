@@ -97,10 +97,13 @@ def all_holidays_with_bbq(holiday_hash)
 
   holiday_hash.values.each do |holiday|
       binding.pry
-      if holiday.values.include?("BBQ")
-        holidaze << holiday
+      holiday.each do |holi, stuff|
+        if stuff.include?("BBQ")
+          holidaze << holi
+        end
       end
-  end
+    end
+
 
   holidaze
 end
