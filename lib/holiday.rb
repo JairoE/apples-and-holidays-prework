@@ -77,7 +77,8 @@ def all_supplies_in_holidays(holiday_hash)
       str = "#{holiday.capitalize}"
       if str.include?("_")
         str.gsub!("_"," ")
-        str.split.each do |word|
+        str.split
+        str.each do |word|
           word.capitalize
         end
         str.join
