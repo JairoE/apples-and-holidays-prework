@@ -71,8 +71,9 @@ def all_supplies_in_holidays(holiday_hash)
       holidaystring = "  #{holiday.capitalize}: #{stuff.join(", ")}"
       if holidaystring.include?("_")
         puts holidaystring.gsub!("_", " ")
-      else 
+      else
         puts holidaystring
+      end
     end
   end
 end
