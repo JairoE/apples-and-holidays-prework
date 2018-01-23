@@ -77,11 +77,11 @@ def all_supplies_in_holidays(holiday_hash)
       str = "#{holiday.capitalize}"
       if str.include?("_")
         str.gsub!("_"," ")
-        str.split
+        str = str.split
         str.each do |word|
           word.capitalize
         end
-        str.join
+        str = str.join
       end
 
       puts "  #{str}: #{stuff.join(", ")}"
