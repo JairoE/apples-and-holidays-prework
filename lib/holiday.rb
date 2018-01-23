@@ -96,7 +96,7 @@ def all_holidays_with_bbq(holiday_hash)
   holidaze = []
 
   holiday_hash.values.each do |holiday|
-      binding.pry
+
       holiday.each do |holi, stuff|
         if stuff.include?("BBQ")
           holidaze << holi
