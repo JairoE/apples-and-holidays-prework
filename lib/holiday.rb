@@ -74,7 +74,7 @@ def all_supplies_in_holidays(holiday_hash)
       # else
       #   puts holidaystring
       # end
-      str = holiday
+      str = "#{holiday}"
       if str.include?("_")
         str.gsub!("_"," ")
         str.split.each do |word|
