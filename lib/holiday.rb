@@ -68,14 +68,8 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holidays|
     puts "#{season.capitalize}:"
     holidays.each do |holiday, stuff|
-      holiday =  holiday.split.map do |letter|
-          if letter == "_"
-            " "
-          else
-            letter
-          end
-        end
-      puts "  #{holiday.capitalize}: #{stuff.join(", ")}"
+      holidaystring = "  #{holiday.capitalize}: #{stuff.join(", ")}"
+      puts holidaystring.gsub!("_", " ")
     end
   end
 end
