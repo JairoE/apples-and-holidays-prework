@@ -81,7 +81,7 @@ def all_supplies_in_holidays(holiday_hash)
         str.each do |word|
           word.capitalize
         end
-        str = str.join
+        str = str.join(" ")
       end
 
       puts "  #{str}: #{stuff.join(", ")}"
